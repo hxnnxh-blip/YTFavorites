@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="olive_green">#4B443C</color>
+    <color name="burgundy">#4D0011</color>
+    <color name="gunmetal_gray">#53565A</color>
+    <color name="cool_gray">#E4E5E8</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/channelTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Channel title"
+        android:inputType="textPersonName"
+        android:textColor="@color/olive_green"
+        android:textColorHighlight="@color/olive_green"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@color/olive_green"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="66dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/channelLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Link"
+        android:inputType="textUri"
+        android:textColor="@color/olive_green"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/channelRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Rank"
+        android:inputType="textPersonName"
+        android:textColor="@color/olive_green"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/reasonForLiking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Why do like this channel?"
+        android:inputType="textPersonName"
+        android:textColor="@color/olive_green"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Add" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/olive_green"
+        android:text="My top 10 Youtube channels"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/channelList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/linkTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LINK:"
+        android:textSize="15dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/burgundy" />
+
+    <TextView
+        android:id="@+id/linkDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/linkTitle"
+        android:autoLink="all"
+        android:gravity="center_vertical"
+        android:textColor="@color/olive_green"
+        android:paddingLeft="20dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/resTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REASON: "
+        android:paddingLeft="20dp"
+        android:textColor="@color/burgundy"
+        android:layout_below="@+id/linkDisplay"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/reasonDisplay"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/olive_green"
+        android:layout_below="@+id/resTxt"/>
+
+</RelativeLayout>
